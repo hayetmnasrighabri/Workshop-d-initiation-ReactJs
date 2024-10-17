@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 function Home() {
@@ -10,6 +10,9 @@ function Home() {
   const changeName=()=>{
     setName(form)
   }
+  useEffect(()=>{
+    alert(name)
+  },[name])
   return (
     <div>
       <h1>{name}</h1>
