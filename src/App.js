@@ -5,11 +5,12 @@ import Nav from './Nav';
 function App() {
   return (
     <div>
-      
+     
     <BrowserRouter>
+    <Nav/>
       <Routes>
         <Route path="/home" element={<Home/>} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Contact" element={<Contact/>} />
       </Routes>
     </BrowserRouter>
     </div>
